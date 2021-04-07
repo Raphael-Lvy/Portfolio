@@ -39,7 +39,7 @@ const CardProjet = ({ name, description, image }) => {
 
 
 const Card = styled.div`
-max-height: 85vh;
+
 padding: 1rem;
 border-radius: 10px;
 display:flex;
@@ -59,13 +59,13 @@ color: white;
 }
 
 @media screen and (min-width:1400px){
-    height: 45vh;
+    height: 45%;
 }
 
 @media screen and (max-width:740px) {
     flex-direction:column;
     justify-content:space-between;
-    min-height:70vh;
+    min-height:70%;
    
 }
 
@@ -93,7 +93,7 @@ height:100%;
 
 @media screen and (max-width:740px) {
 max-width:100%;
-height:55%;
+
 }
 `
 
@@ -115,7 +115,7 @@ padding:1rem 0;
 }
 `
 const ImageWrapper = styled.div`
-margin:0.5rem 0.5rem;
+padding:0.5rem 0.5rem;
 max-height:100%;
 max-width:100%;
 position: relative;
@@ -127,9 +127,10 @@ position: relative;
     opacity:1;
 }
 
+@media screen and (max-width:740px) {
+max-width:100%;
 
-
-
+}
 `
 
 const Image = styled.img`
@@ -145,9 +146,6 @@ const Image = styled.img`
    @media screen and (max-width:740px) {
    max-width:100%;
    max-height:100%;
-
-   
-
 }
 
 `
