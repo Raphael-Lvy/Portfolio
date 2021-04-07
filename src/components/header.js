@@ -65,7 +65,7 @@ display:flex;
 align-items:center;
 
 img {
-  height:45px;
+  height:40px;
 }
 
 `

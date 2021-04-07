@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Lines = ({deg, position, delay}) => {
+const Lines = ({deg, position, delay , bg}) => {
 
    
 
     return (
-      <Line deg={deg} position={position} delay={delay}/>
+      <Line deg={deg} position={position} delay={delay} bg={bg} />
 
      
     );
@@ -17,7 +17,7 @@ export default Lines;
 const Line =styled.div `
 
 transform : ${({ deg }) => deg ? `rotate(${deg}deg )` : `rotate(${0}deg )`};
-background-color: rgba(255,255,255,0.1);
+background-color: ${({ bg }) => bg ? `rgba(255,255,255,0.1)` : `transparent` };
   width:1px;
   height:150vh;
   position:absolute;

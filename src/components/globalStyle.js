@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(5,217,254);
     --secondary-color: rgb(5,217,254);
-    --primary-bg : rgba(5,217,254,0.8);
+    --primary-bg : rgba(5,217,254,0.95);
     --primary-bg-button : rgba(5,217,254,0.5);
     --secondary-bg-button : rgba(5,217,254,0.5);
     --secondary-bg:rgb(5,217,254);
