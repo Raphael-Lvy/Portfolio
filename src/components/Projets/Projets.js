@@ -43,6 +43,7 @@ width: 100vw;
 background: linear-gradient( to top ,rgb(100, 100, 100) 0%,rgb(30, 30, 30)  100%) ;
 display:flex;
 flex-direction:column;
+align-items: center;
 position: relative;
 `
 const ProjetTitle = styled.h1`
@@ -51,6 +52,8 @@ justify-content:center;
 margin: 3rem 0 1rem;
 color: white;
 font-size: 2rem;
+border-bottom: 1px solid gray;
+padding : 0 15% 1rem 15%;
 `
 
 const ProjetsGrid = styled.div`

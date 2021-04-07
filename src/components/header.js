@@ -40,14 +40,15 @@ const Header = () => {
 const Head = styled.header`
 z-index:100;
 width: 100%;
-position:fixed;
+position:absolute;
+
 
 
 `
 
 const Nav = styled.nav`
 background-color: transparent;
-height: 60px;
+height: 70px;
 display:flex;
 justify-content: space-between;
 align-items: center;

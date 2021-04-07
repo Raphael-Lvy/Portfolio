@@ -17,7 +17,7 @@ const Hero = () => {
             <HeroH1> <Petit>Je suis</Petit> <Ombres>R</Ombres>aphaël <Ombres>L</Ombres>evy </HeroH1>
             <ElementReveal>
                  <HeroP>Développeur Fullstack <Blue>React.js <Logo><FaReact/></Logo></Blue> disponible pour vos projets web !</HeroP>
-              <Link to="/design" style={{ textDecoration: 'none', display:'inline-block' }}>
+              <Link  style={{ textDecoration: 'none', display:'inline-block' }}>
               <Button primary={true}>Contact</Button></Link>
             </ElementReveal>
         
