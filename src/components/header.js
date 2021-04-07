@@ -40,9 +40,7 @@ const Header = () => {
 const Head = styled.header`
 z-index:100;
 width: 100%;
-position:absolute;
-
-
+position:fixed;
 
 `
 
@@ -60,7 +58,7 @@ color: white;
 
 
 const Brand = styled.div`
-padding: 0 10%;
+padding: 0 5%;
 
 display:flex;
 align-items:center;

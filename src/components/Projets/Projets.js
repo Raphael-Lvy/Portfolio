@@ -51,6 +51,8 @@ display:flex;
 justify-content:center;
 margin: 3rem 0 1rem;
 color: white;
+text-shadow: 2px 2px 1px gray;
+letter-spacing:0.15rem;
 font-size: 2rem;
 border-bottom: 1px solid gray;
 padding : 0 15% 1rem 15%;
