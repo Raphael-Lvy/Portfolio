@@ -48,10 +48,13 @@ display:grid;
 grid-template-columns: 15% 1fr 5%;
 position: relative;
 
+
 .lines {
   height:100vh;
-  width:100%;
-  overflow:none;
+  width:100vw;
+  position: absolute;
+  grid-column: 1/4;
+  overflow:hidden;
 }
 `
 

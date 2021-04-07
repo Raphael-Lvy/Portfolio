@@ -40,8 +40,8 @@ const Header = () => {
 const Head = styled.header`
 z-index:100;
 width: 100%;
+position:fixed;
 
-position: fixed;
 
 `
 

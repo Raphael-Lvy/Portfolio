@@ -28,10 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', cursive;
     touch-action: manipulation;
     position: absolute;
+    overflow-x: hidden;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
     
   }
