@@ -10,6 +10,7 @@ const Visible = ({children, bottomOffset, delay, selector}) => {
         <VisibilitySensor
           onChange={(isVisible) => {
             setIsVisible(isVisible);
+            console.log('ok')
           }}
           partialVisibility={'bottom'}
           offset={{bottom:-bottomOffset}}
