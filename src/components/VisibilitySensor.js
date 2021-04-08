@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
-const Visible = ({children}) => {
+const Visible = ({children, bottomOffset, delay}) => {
   
     const [isVisible, setIsVisible] = useState(true);
 
@@ -12,7 +12,7 @@ const Visible = ({children}) => {
             setIsVisible(isVisible);
           }}
           partialVisibility={'bottom'}
-          offset={{bottom:-450}}
+          offset={{bottom:-bottomOffset}}
         >
           <div
             style={{
@@ -21,8 +21,8 @@ const Visible = ({children}) => {
               transform: isVisible? 'translate(0,0)' : 'translate(0,200px)',
               scrollCheck:true,
               scrollThrottle:1,
-              scrollDelay:1500,
-              transition: ' 750ms linear',
+              scrollDelay: 250,
+              transition: ` ${delay}ms linear`,
               
             }}>
             {children}

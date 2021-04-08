@@ -10,7 +10,7 @@ const CardProjet = ({ name, description, image }) => {
 
 
     return (
-        <VisibilitySensor>
+        <VisibilitySensor bottomOffset={400} delay={750}>
         <Card>
             <Description>
                 <Title>{name}</Title>
@@ -102,7 +102,7 @@ const Title = styled.p`
 text-transform: uppercase;
 font-weight: bold;
 font-size: 1.25rem;
-border-bottom: 1px solid lightgray;
+border-bottom: 1px solid gray;
 padding-bottom:0.25rem;
 
 `
