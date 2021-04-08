@@ -70,25 +70,7 @@ padding: 2rem;
 
 `
 
-const Card = styled.div`
-height: 40vh;
-box-shadow: 0 0 4px var(--secondary-color);
-border-radius: 10px;
-background: white;
-display: flex;
-flex-direction:column;
-justify-content:space-around;
-align-items:center;
-position: relative;
-transition:  0.3s ease-in-out;
 
-&:hover {
-    color:white;
-    
-    background:rgb(70, 70, 70);
-}
-
-`
 
 
 export default Projets;

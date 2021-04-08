@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from 'styled-components';
 import Button from '../Button/Button';
 import VisibilitySensor from '../VisibilitySensor';
@@ -49,11 +47,9 @@ position: relative;
 transition: 0.5s linear;
 color: black;
 height:100%;
-background:lightgray;
 
-&:hover {
-    
-}
+background-image: linear-gradient(to bottom, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+
 
 .btn {
     transition : 0.7s ease;
