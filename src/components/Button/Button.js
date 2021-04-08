@@ -19,11 +19,11 @@ justify-content:center;
 align-items:center;
 padding : ${({ small }) => small ? '0.5rem 1.25rem' : '0.75rem 1.5rem'};
 font-size : ${({ small }) => small ? '1.2rem' : '1.5rem'};
-font-weight:bold;
+font-weight:600;
 font-family:'Roboto';
 border-radius:10px;
-border: ${({ primary }) => primary ? '2px var(--primary-color) solid' :'2px var(--secondary-color) solid' };
-color: ${({ primary }) => primary ? 'var(--primary-color)' : 'var(--secondary-color)'};
+border: ${({ primary }) => primary ? '1px var(--primary-color) solid' :'1px black solid' };
+color: ${({ primary }) => primary ? 'var(--primary-color)' : 'black'};
 outline: 0;
   overflow:hidden;
   background: none;
@@ -32,7 +32,7 @@ outline: 0;
   transition: 0.08s ease-in;
 
   &:hover {
-    color:black;
+    color: ${({ primary }) => primary ? 'white' : 'black'};
     transform: scale(1.05);
    
   }
@@ -40,7 +40,7 @@ outline: 0;
   &:before {
     content: "";
   position: absolute;
-  background: ${({primary}) => primary? 'white' : 'var(--secondary-bg-button)'} ;
+  background: ${({primary}) => primary? 'var(--secondary-bg-button)' : 'rgba(255,255,255,0.4)'} ;
   bottom: 0;
   left: 0;
   right: 100%;
@@ -56,7 +56,7 @@ outline: 0;
 
   @media screen and (max-width:740px) {
     padding: 0.5rem 1.5rem;
-    font-size:1.25rem;
+    font-size:1.2rem;
   }
 `
 

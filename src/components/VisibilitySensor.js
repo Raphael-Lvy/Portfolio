@@ -9,17 +9,20 @@ const Visible = ({children}) => {
       return (
         <VisibilitySensor
           onChange={(isVisible) => {
-            setIsVisible(!isVisible);
+            setIsVisible(isVisible);
           }}
           partialVisibility={'bottom'}
-          offset={{bottom:-200}}
+          offset={{bottom:-450}}
         >
           <div
             style={{
               borderRadius: '10px',
-              opacity: isVisible ? 0.05 : 1,
-              background : !isVisible? 'rgba(10,10,10,0.4)': '',
-              transition: 'opacity 1500ms linear',
+              opacity: isVisible ? 1 : 0.01,
+              transform: isVisible? 'translate(0,0)' : 'translate(0,200px)',
+              scrollCheck:true,
+              scrollThrottle:1,
+              scrollDelay:1500,
+              transition: ' 750ms linear',
               
             }}>
             {children}

@@ -17,14 +17,14 @@ const CardProjet = ({ name, description, image }) => {
                 
                 <Content>{description}</Content>
                 <div className='btn'>
-                <Button primary={true} small={true} >
-                    Voir le site
+                <Button primary={false} small={true} >
+                    Découvrir le site
                     </Button>
                     </div>
             </Description>
             
             <ImageWrapper >
-                <Image src={image.childImageSharp.fluid.src} alt={description} />
+                <Image src={image.childImageSharp.fluid.src} alt={description} loading="lazy" />
                 <div className='middle'>
                 <Button primary={true} small={true} >
                     Voir
@@ -47,11 +47,12 @@ align-items:center;
 justify-content:space-around;
 position: relative;
 transition: 0.5s linear;
-color: white;
-
+color: black;
+height:100%;
+background:lightgray;
 
 &:hover {
-    background: rgba(10,10,10,0.4)
+    
 }
 
 .btn {
@@ -59,13 +60,13 @@ color: white;
 }
 
 @media screen and (min-width:1400px){
-    height: 45%;
+    height: 100%;
 }
 
 @media screen and (max-width:740px) {
     flex-direction:column;
     justify-content:space-between;
-    min-height:70%;
+    min-height:100%;
    
 }
 
@@ -120,7 +121,8 @@ max-height:100%;
 max-width:100%;
 position: relative;
 &:hover  img {
-    filter: opacity(0.3);
+    filter: brightness(0.35);
+    background:rgba(0,0,0,0,5);
 }
 
 &:hover .middle {
@@ -139,7 +141,7 @@ const Image = styled.img`
    border-radius:10px;
    object-fit: fit;
    
-   filter: opacity(1);
+   filter: brightness(1);
    transition: 0.5s ease-in-out;
    position:relative;
 

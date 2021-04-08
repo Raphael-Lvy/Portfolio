@@ -31,7 +31,7 @@ const About = () => {
     return (
        <Wrapper>
         <ImageWrapper>
-            <ProfilePic src={Raphael}/>
+            <ProfilePic src={Raphael} alt='freelance' loading="lazy"/>
         <StatementWrapper>
            Je suis développeur <Word/>
         </StatementWrapper>
@@ -88,9 +88,9 @@ const About = () => {
             <Lines deg={0} position = {10} delay={1.5} />
             <Lines deg={0} position = {25} delay={1.75} />
             <Lines deg={0} position = {40} delay={2} />
-            <Lines deg={180} position = {60} delay={2.5} />
-            <Lines deg={180} position = {75} delay={2.75} />
-            <Lines deg={0} position = {90} delay={3} />
+            <Lines deg={0} position = {60} delay={2.25} />
+            <Lines deg={0} position = {75} delay={2.5} />
+            <Lines deg={0} position = {90} delay={2.75} />
            
         </div>
        </Wrapper>
@@ -220,11 +220,20 @@ p{
 const Arbres = keyframes`
 from {
     opacity: 0;
-    transform: translate(0,-5%);
     }
 to {
     opacity:1;
+}
+`
+
+const Computer = keyframes `
+from {
+    transform: translate(0,-5%);
+    opacity: 0;
+    }
+to {
     transform: translate(0,0%);
+    opacity:1;
 }
 `
 
@@ -263,12 +272,13 @@ svg {
 }
 
 #Vector_12, #Vector_10 {
-    animation: ${Arbres} 3s infinite alternate;
-    animation-delay: 3s;
+    animation: ${Computer} 3s infinite alternate;
+   
 }
 
 #Vector_5 {
-    animation: ${Hair} 6s infinite alternate;
+    
+    fill: rgb(77, 1, 1);
 }
 
 
