@@ -15,12 +15,6 @@
         "url":"www.twitter.com",
         "photo":"./Images/hero4.jpg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi repellat blanditiis facere in reprehenderit, repellendus aut nostrum totam maxime. Quaerat in exercitationem facilis aliquid, qui numquam nostrum tempore quia."
-    },
-    {
-        "name" :"projet 4",
-        "url":"www.youtube.com",
-        "photo":"./Images/hero1.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi repellat blanditiis facere in reprehenderit, repellendus aut nostrum totam maxime. Quaerat in exercitationem facilis aliquid, qui numquam nostrum tempore quia."
     }
     
 ]
