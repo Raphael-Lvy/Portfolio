@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import {FaReact} from 'react-icons/fa';
 import Button from './Button/Button';
-import {Link} from 'gatsby';
 import Lines from './Lines/Lines';
 import { Link as AnimatedLink } from "react-scroll";
 

@@ -1,40 +1,26 @@
 
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Burger from './Burger/Burger';
 import Menu from './Menu/Menu';
 import { Link as AnimatedLink } from "react-scroll";
-import {RiComputerFill} from 'react-icons/ri';
-import {BsFillLightningFill} from 'react-icons/bs';
-import {AiFillMessage} from 'react-icons/ai';
-import  programming  from "./Assets/programming.svg"
+
+import programming from "./Assets/programming.svg"
 const Header = () => {
 
   const [open, setOpen] = useState(false);
-  
+
   return (
     <Head >
       <Nav>
-      <Brand ><AnimatedLink activeClass="active"
-                            to="Hero"
-                            smooth={true}
-                            offset={0}
-                            duration={1000}>   <img src={programming} alt='logo'/> </AnimatedLink></Brand>
-        {/* <Sections>
-          <Section href="/#">
-           <White><BsFillLightningFill/> </White>
-        About
-      </Section>
-          <Section href="/#">
-         <White>   <RiComputerFill /> </White>
-        Projets
-        </Section>
-          <Section href="/#">
-          <White>   <AiFillMessage /> </White>
-        Contact
-        </Section>
-        </Sections> */}
-        
+        <Brand >
+          <AnimatedLink activeClass="active"
+            to="Hero"
+            smooth={true}
+            offset={0}
+            duration={1000}>   <img src={programming} alt='logo' />
+          </AnimatedLink>
+        </Brand>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </Nav>
@@ -75,52 +61,5 @@ img {
 `
 
 
-const Sections = styled.div`
-padding: 0 5%;
-display: flex;
-`
-
-const Section = styled.a`
-font-size: 1.1rem;
-    text-transform: uppercase;
-    padding: 2rem 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.4rem;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s linear;
-    display:flex;
-    align-items:center;
-
-    svg {
-      font-size:1.5rem;
-      margin: 0 10px;
-    }
-    
-    @media (max-width: 700px) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    &:hover {
-         
-        transform: translate3d(5px, 0px, 0px);
-    }
-  
-
- @media screen and (max-width:1000px) {
-   display:none;
- }
-
-`
-
-const White = styled.span`
-color: white;
-
-transition:1s;
-&:hover {
-    color:var(--primary-color);
-}
-`
 
 export default Header
