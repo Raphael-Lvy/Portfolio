@@ -38,15 +38,10 @@ display: flex;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   
-  @media (max-width: 1000px) {
-    
-  }
-  @media (min-width: 1000px) {
-    display:none;
-  }
+  
 
   a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     padding: 4rem 0;
     font-weight: bold;

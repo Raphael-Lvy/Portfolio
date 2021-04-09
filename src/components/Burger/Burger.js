@@ -56,9 +56,7 @@ const StyledBurger = styled.button `
     }
   }
 
-  @media screen and (min-width:1000px) {
-      display:none;
-  }
+ 
 `
 
 export default Burger;

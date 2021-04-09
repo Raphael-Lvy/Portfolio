@@ -15,7 +15,7 @@ const Header = () => {
     <Head >
       <Nav>
         <Brand >  <img src={programming} alt='logo'/> </Brand>
-        <Sections>
+        {/* <Sections>
           <Section href="/#">
            <White><BsFillLightningFill/> </White>
         About
@@ -28,7 +28,7 @@ const Header = () => {
           <White>   <AiFillMessage /> </White>
         Contact
         </Section>
-        </Sections>
+        </Sections> */}
         
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

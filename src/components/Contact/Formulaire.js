@@ -1,19 +1,45 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import VisibilitySensor from '../VisibilitySensor';
-import Formulaire from './Formulaire';
+import Button from '../Button/Button';
+import './Contact.css';
 
-const Contact = () => {
+const Formulaire = () => {
+
+const surbrillance = () => {
+  const Nom = document.querySelector('.appNom');
+  const Email = document.querySelector('.appEmail');
+  const Tel = document.querySelector('.appTel');
+  const Message = document.querySelector('.appMessage');
+  
+  Nom.style.borderBottom ='1px solid white';
+  Email.style.borderBottom ='1px solid white';
+  Tel.style.borderBottom ='1px solid white';
+  Message.style.borderBottom ='1px solid white';
+  
+  setTimeout(() => {
+    Nom.style.borderBottom ='1px solid #666';
+    Email.style.borderBottom ='1px solid #666';
+    Tel.style.borderBottom ='1px solid #666';
+    Message.style.borderBottom ='1px solid #666';
+   
+  }, 500);
+}
+
     return (
-        <Wrapper>
-            <ProjetTitle>Un projet? N'hésitez pas à me contacter</ProjetTitle>
-            <SubWrapper>
-            <VisibilitySensor delay={1000} bottomOffset={550}>
-                    <Formulaire />
-                </VisibilitySensor>
-                <SVGWrapper>
-                    <VisibilitySensor delay={750} bottomOffset={400}>
-                        <svg viewBox="0 0 676 531" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="screen">
+        <div className="screen-header">
+          <div className="screen-header-left" onClick={surbrillance}>
+            <div className="screen-header-button close"></div>
+            <div className="screen-header-button maximize"></div>
+            <div className="screen-header-button minimize"></div>
+          </div>
+          <div className="app-title">Contact</div>
+          <div className="screen-header-right" onClick={surbrillance}>
+            <div className="screen-header-ellipsis"></div>
+            <div className="screen-header-ellipsis"></div>
+            <div className="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div className="svg-small"><svg viewBox="0 0 676 531" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Group 1">
                                 <g id="Group" opacity="0.1">
                                     <path id="Vector" opacity="0.1" d="M171.42 338.02C177.705 338.02 182.8 331.349 182.8 323.12C182.8 314.891 177.705 308.22 171.42 308.22C165.135 308.22 160.04 314.891 160.04 323.12C160.04 331.349 165.135 338.02 171.42 338.02Z" fill="#3F3D56" />
@@ -182,108 +208,34 @@ const Contact = () => {
                                     <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
                                 </linearGradient>
                             </defs>
-                        </svg>
-                    </VisibilitySensor>
-                </SVGWrapper>
-            </SubWrapper>
-        </Wrapper>
+                        </svg></div>
+        <div className="screen-body">
+          <div className="screen-body-item">
+            <div className="app-form">
+              <div className="app-form-group">
+                <input className="app-form-control appNom" placeholder="Nom" />
+              </div>
+              <div className="app-form-group nom">
+                <input className="app-form-control appEmail" placeholder="Email"/>
+              </div>
+              <div className="app-form-group tel">
+                <input className="app-form-control appTel" placeholder="Téléphone (falcultatif)"/>
+              </div>
+              <div className="app-form-group message">
+                <input className="app-form-control appMessage" placeholder="Message"/>
+              </div>
+              <div className="app-form-group buttons">
+                
+                <Button small={true} primary={true}>Envoyer</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     );
 };
 
-export default Contact;
-
-const Wrapper = styled.section`
-width: 100%;
-background: linear-gradient( to top ,rgb(20, 20, 20) 0%,rgb(30, 30, 30)  100%) ;
-display: flex;
-flex-direction: column;
-
-align-items: center;
-color:white;
-position:relative;
-`
-
-const ProjetTitle = styled.h1`
-display:flex;
-justify-content:center;
-margin:50px;
-
-color: white;
-text-shadow: 2px 2px 1px gray;
-letter-spacing:0.15rem;
-font-size: 2rem;
-border-bottom: 1px solid gray;
-padding : 0 0 1rem 0;
-`
-const SubWrapper = styled.section`
-width: 100%;
-display: flex;
-justify-content: space-around;
-align-items: center;
-margin-bottom: 5vh;
-padding: 0 30px;
-
-@media screen and (max-width:740px) {
-    flex-direction:column;
-}
-`
 
 
-const appear = keyframes`
-from {
-    
-    opacity:0.25;
-}
-to {
-  
-    opacity:1;
-}
-`
 
-const flowers = keyframes`
-from {
-   
-    opacity:0;
-}
-to {
-    fill:white;
-    opacity:1;
-}
-`
-
-
-const SVGWrapper = styled.div`
-width:auto;
-height:50vh;
-
-svg {
-    width:300px;
-}
-
-#Vector_52, #Vector_51 ,#Vector_55, #Vector_48   {
-    
-    animation: ${appear} 5s infinite both ease-in-out alternate;
-}
-#Vector_42{
-    animation: ${flowers} 1.5s infinite both ease-in-out alternate;
-}
-
-#Vector_33{
-    animation: ${flowers} 1s infinite both ease-in-out alternate;
-    animation-delay:1s;
-}
-#Vector_88{
-    animation: ${flowers} 1.5s infinite both ease-in-out alternate;
-    animation-delay:0.5s;
-}
-#Vector_96{
-    animation: ${flowers} 1s infinite both ease-in-out alternate;
-    animation-delay:1.75s;
-}
-@media screen and (max-width:740px) {
-    display:none;
-}
-`
-// 42 33 88 96
-
-
+export default Formulaire;
