@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
-const Visible = ({children, bottomOffset, delay, selector}) => {
+const Visible = ({children, bottomOffset, delay}) => {
   
     const [isVisible, setIsVisible] = useState(true);
 
@@ -23,10 +23,11 @@ const Visible = ({children, bottomOffset, delay, selector}) => {
               scrollCheck:true,
               scrollThrottle:1,
               scrollDelay: 250,
-              transition: ` ${delay}ms linear`,
+              transition: `${delay}ms linear`,
+              
               
             }}
-            className={selector} 
+            
             >
             {children}
            </div>
