@@ -1,8 +1,9 @@
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Burger from './Burger/Burger';
 import Menu from './Menu/Menu';
+import { Link as AnimatedLink } from "react-scroll";
 import {RiComputerFill} from 'react-icons/ri';
 import {BsFillLightningFill} from 'react-icons/bs';
 import {AiFillMessage} from 'react-icons/ai';
@@ -10,11 +11,15 @@ import  programming  from "./Assets/programming.svg"
 const Header = () => {
 
   const [open, setOpen] = useState(false);
-
+  
   return (
     <Head >
       <Nav>
-        <Brand >  <img src={programming} alt='logo'/> </Brand>
+      <Brand ><AnimatedLink activeClass="active"
+                            to="Hero"
+                            smooth={true}
+                            offset={0}
+                            duration={1000}>   <img src={programming} alt='logo'/> </AnimatedLink></Brand>
         {/* <Sections>
           <Section href="/#">
            <White><BsFillLightningFill/> </White>

@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const Footer = () => {
      return (
           <StyledFooter>
-          <Author>Raphaël Levy © {new Date().getFullYear()} <span role='img' alt='fusée'>🚀</span></Author>
+          <Author>Raphaël Levy © {new Date().getFullYear()} <span role='img' aria-label='fusée'>🚀</span></Author>
           <Bottom>
-              Fait avec <span role='img' alt='amour'>💕</span>
+              Fait avec <span role='img' aria-label='amour'>💕</span>
           </Bottom>
     </StyledFooter>
      );
@@ -15,11 +15,7 @@ const Footer = () => {
 export default Footer;
 
 
-const Author = styled.div`
-font-size:1.25rem;
-font-weight: bold;
-margin-left:50px;
-`
+
 
 
 
@@ -31,13 +27,17 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction:column;
   justify-content:center;
- 
+  font-size:1rem;
   
+`
+const Author = styled.div`
+
+font-weight: bold;
+margin-left:10px;
 `
 
 const Bottom = styled.div`
-font-size:1rem;
 align-self:flex-end;
-margin-right:50px;
+margin-right:10px;
 font-weight:bold;
 `

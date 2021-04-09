@@ -4,12 +4,13 @@ import {FaReact} from 'react-icons/fa';
 import Button from './Button/Button';
 import {Link} from 'gatsby';
 import Lines from './Lines/Lines';
+import { Link as AnimatedLink } from "react-scroll";
 
 const Hero = () => {
 
  
     return (
-        <HeroContainer>
+        <HeroContainer name='Hero'>
         
   
         <HeroContent>
@@ -17,8 +18,12 @@ const Hero = () => {
             <HeroH1> <Petit>Je suis</Petit> <Ombres>R</Ombres>aphaël</HeroH1>
             <ElementReveal>
                  <HeroP>Développeur Fullstack <Blue>React.js <Logo><FaReact/></Logo></Blue> disponible pour vos projets web !</HeroP>
-              <Link  style={{ textDecoration: 'none', display:'inline-block' }}>
-              <Button primary={true}>Contact</Button></Link>
+              
+              <AnimatedLink activeClass="active"
+                            to="Contact"
+                            smooth={true}
+                            offset={0}
+                            duration={1000}><Button primary={true}>Contact</Button></AnimatedLink>
             </ElementReveal>
         
         </HeroContent>

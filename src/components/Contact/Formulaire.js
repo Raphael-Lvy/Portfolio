@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../Button/Button';
-import styled from 'styled-components';
 import './Contact.css';
 
 const Formulaire = () => {
@@ -28,10 +27,10 @@ const surbrillance = () => {
     return (
         <div className="screen">
         <div className="screen-header">
-          <div className="screen-header-left" onClick={surbrillance}>
-            <div className="screen-header-button close"></div>
-            <div className="screen-header-button maximize"></div>
-            <div className="screen-header-button minimize"></div>
+          <div className="screen-header-left" >
+            <div className="screen-header-button close" onClick={surbrillance}></div>
+            <div className="screen-header-button maximize" onClick={surbrillance}></div>
+            <div className="screen-header-button minimize" onClick={surbrillance}></div>
           </div>
           <div className="app-title">Contact</div>
           <div className="screen-header-right" onClick={surbrillance}>

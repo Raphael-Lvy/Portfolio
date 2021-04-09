@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
      
       <About />
       <Projets data={data} />
-      <Contact/>
+      <Contact />
     </Layout>)
 }
 

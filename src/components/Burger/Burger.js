@@ -6,6 +6,8 @@ import styled from 'styled-components';
 
 
 const Burger = ({open, setOpen}) => {
+
+  
     return (
         <StyledBurger open={open} onClick={()=> setOpen(!open)}>
             <div />

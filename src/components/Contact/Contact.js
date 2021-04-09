@@ -5,7 +5,7 @@ import Formulaire from './Formulaire';
 
 const Contact = () => {
     return (
-        <Wrapper>
+        <Wrapper name='Contact'>
             <ProjetTitle>Un projet? N'hésitez pas à me contacter</ProjetTitle>
             <SubWrapper>
             <VisibilitySensor delay={1000} bottomOffset={550}>

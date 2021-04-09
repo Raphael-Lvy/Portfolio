@@ -7,7 +7,7 @@ const Projets = ({ data }) => {
 
 
     return (
-        <ProjetsContainer>
+        <ProjetsContainer name='Projets'>
             <ProjetTitle>
                 Projets
         </ProjetTitle>

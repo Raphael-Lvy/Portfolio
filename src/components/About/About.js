@@ -30,7 +30,7 @@ const About = () => {
 
 
     return (
-        <Wrapper>
+        <Wrapper name='Présentation'>
             <ImageWrapper>
                 <ProfilePic src={Raphael} alt='freelance' loading="lazy" />
                 <StatementWrapper>

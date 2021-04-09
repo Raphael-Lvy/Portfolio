@@ -3,22 +3,39 @@ import styled from 'styled-components';
 import { RiComputerFill } from 'react-icons/ri';
 import { BsFillLightningFill } from 'react-icons/bs';
 import { AiFillMessage } from 'react-icons/ai';
+import { Link as AnimatedLink } from "react-scroll";
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
+      <AnimatedLink activeClass="active"
+                            to="Présentation"
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                            onClick={()=> setOpen(!open)}
+                            >
         <White><BsFillLightningFill /> </White>
-        About
-      </a>
-      <a href="#">
+        Présentation
+        </AnimatedLink>
+        <AnimatedLink activeClass="active"
+                            to="Projets"
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                            onClick={()=> setOpen(!open)}>
         <White>   <RiComputerFill /> </White>
         Projets
-        </a>
-      <a href="/design">
+        </AnimatedLink>
+        <AnimatedLink activeClass="active"
+                            to="Contact"
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                            onClick={()=> setOpen(!open)}>
         <White>   <AiFillMessage /> </White>
          Contact
-        </a>
+        </AnimatedLink>
     </StyledMenu>
   );
 };
@@ -37,8 +54,10 @@ display: flex;
   
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-  
-  
+ 
+  @media (max-width: 550px) {
+    padding: 1rem;
+  }
 
   a {
     font-size: 1.5rem;
@@ -54,6 +73,15 @@ display: flex;
     @media (max-width: 1000px) {
       font-size: 1.5rem;
       text-align: center;
+    }
+
+    @media (max-width: 750px) {
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 550px) {
+      letter-spacing: 0.25rem;
+      font-size:1rem;
     }
 
     &:hover {
