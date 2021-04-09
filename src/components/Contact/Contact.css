@@ -237,19 +237,19 @@
   }
 }
 
-#Vector_42{
+#Vector_42Form{
     animation: flowers 1.5s infinite both ease-in-out alternate;
 }
 
-#Vector_33{
+#Vector_33Form{
     animation: flowers 1s infinite both ease-in-out alternate;
     animation-delay:1s;
 }
-#Vector_88{
+#Vector_88Form{
     animation: flowers 1.5s infinite both ease-in-out alternate;
     animation-delay:0.5s;
 }
-#Vector_96{
+#Vector_96Form{
     animation: flowers 1s infinite both ease-in-out alternate;
     animation-delay:1.75s;
 }

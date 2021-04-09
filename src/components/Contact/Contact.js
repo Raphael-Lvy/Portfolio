@@ -221,7 +221,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 margin-bottom: 5vh;
-padding: 0 30px;
+padding: 0 0px;
 
 @media screen and (max-width:740px) {
     flex-direction:column;

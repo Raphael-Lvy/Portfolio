@@ -18,7 +18,7 @@ const Word = () => {
                 i += 1;
             }
 
-        }, 4000);
+        }, 2500);
         return () => clearInterval(interval);
     }, [])
 
@@ -240,7 +240,7 @@ position: relative;
 padding-left:0.35rem;
 color:white;
 text-shadow: 2px 2px 1px var(--secondary-color);
-animation : ${fadeA} 4s ease-in-out;
+animation : ${fadeA} 2.5s ease-in-out;
 font-size: 1.8rem;
 letter-spacing:0.15rem;
 
