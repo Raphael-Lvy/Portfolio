@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Projets from '../components/Projets/Projets'
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
+import { graphql } from 'gatsby';
 
 const IndexPage = ({ data }) => {
 
