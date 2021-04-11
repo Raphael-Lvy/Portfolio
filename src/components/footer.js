@@ -38,6 +38,6 @@ margin-left:10px;
 
 const Bottom = styled.div`
 align-self:flex-end;
-margin-right:10px;
+margin-right:20px;
 font-weight:bold;
 `
