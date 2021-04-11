@@ -21,23 +21,22 @@ export default Footer;
 
 const StyledFooter = styled.footer`
   color: #fffaff;
-  height:15vh;
+  height:10vh;
   background: var(--secondary-color);
   padding: 1rem 0;
   display: flex;
-  flex-direction:column;
-  justify-content:center;
+  justify-content:space-around;
+  align-items:center;
   font-size:1rem;
+  font-weight:bold;
   
 `
 const Author = styled.div`
 
-font-weight: bold;
-margin-left:10px;
 `
 
 const Bottom = styled.div`
-align-self:flex-end;
-margin-right:20px;
-font-weight:bold;
+
+
+
 `

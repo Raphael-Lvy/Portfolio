@@ -40,7 +40,7 @@ const Projets = ({ data }) => {
 
 const ProjetsContainer = styled.section`
 width: 100vw;
-background: linear-gradient( to top ,rgb(100, 100, 100) 0%,rgb(30, 30, 30)  100%) ;
+background: linear-gradient( to top ,rgb(50, 50, 50) 0%,rgb(30, 30, 30)  100%) ;
 display:flex;
 flex-direction:column;
 align-items: center;
