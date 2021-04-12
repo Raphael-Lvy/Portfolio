@@ -104,11 +104,11 @@ const Hero = () => {
 
 const HeroContainer = styled.section`
 /* background : rgb(21,21,21); */
-background: url(${BG}) no-repeat center center fixed; 
+/* background: url(${BG}) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 height: 100vh;
 width:100vw;
 display:grid;

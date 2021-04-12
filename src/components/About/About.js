@@ -152,11 +152,11 @@ width: 100%;
 /* background: linear-gradient( to top ,rgb(20, 20, 20) 0%,rgb(30, 30, 30)  100%) ; */
 /* clip-path: polygon(25% 0%, 100% 0%, 0 36%, 0 0); */
 
-background: url(${BG}) no-repeat center center fixed; 
+/* background: url(${BG}) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 display: flex;
 flex-direction: column;
 justify-content:space-around;
