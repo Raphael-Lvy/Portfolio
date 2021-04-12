@@ -137,7 +137,7 @@
 
 .app-form-control {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 10px;
   background: none;
   border: none;
   border-bottom: 1px solid #666;
@@ -252,4 +252,25 @@
 #Vector_96Form{
     animation: flowers 1s infinite both ease-in-out alternate;
     animation-delay:1.75s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  
+  -webkit-box-shadow: 0 0 0px 30px #4D4D4F inset;
+  box-shadow:0 0 0px 30px #4D4D4F inset;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color:  #ddd;
+  
+}
+
+.hidden {
+  display: none;
 }

@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Button from '../Button/Button';
 import './Contact.css';
+import emailjs from 'emailjs-com';
 
 const Formulaire = () => {
 
@@ -24,8 +25,20 @@ const surbrillance = () => {
   }, 300);
 }
 
+const [form, setForm] = useState({
+  nom:'', email:'', téléphone:'', message:''
+})
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+
+
+}
+
+
     return (
-        <div className="screen">
+        <form className="screen" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
         <div className="screen-header">
           <div className="screen-header-left" >
             <div className="screen-header-button close" onClick={surbrillance}></div>
@@ -214,25 +227,27 @@ const surbrillance = () => {
           <div className="screen-body-item">
             <div className="app-form">
               <div className="app-form-group">
-                <input className="app-form-control appNom" placeholder="Nom" />
+                <input className="app-form-control appNom" placeholder="Nom" type='text' id='nom' required  value={form.nom} onChange={(e) => setForm({...form, nom: e.target.value})} />
               </div>
               <div className="app-form-group nom">
-                <input className="app-form-control appEmail" placeholder="Email"/>
+                <input className="app-form-control appEmail" placeholder="Email" type='email' id='email' required value={form.email} onChange={(e) => setForm({...form, email: e.target.value})}/>
               </div>
               <div className="app-form-group tel">
-                <input className="app-form-control appTel" placeholder="Téléphone (falcultatif)"/>
+                <input className="app-form-control appTel" placeholder="Téléphone (falcultatif)" type='text' id='téléphone' value={form.téléphone} onChange={(e) => setForm({...form, téléphone: e.target.value})}/>
               </div>
               <div className="app-form-group message">
-                <input className="app-form-control appMessage" placeholder="Message"/>
+                <input className="app-form-control appMessage" placeholder="Message" type='text' id='message' value={form.message} onChange={(e) => setForm({...form, message: e.target.value})}/>
               </div>
               <div className="app-form-group buttons">
-                
-                <Button small={true} primary={true}>Envoyer</Button>
+              <p className="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
+                <Button small={true} primary={true} type='submit'>Envoyer</Button>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     );
 };
 
