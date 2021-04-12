@@ -39,7 +39,7 @@ const About = () => {
             </ImageWrapper>
 
             <Presentation>
-                <VisibilitySensor delay={750} bottomOffset={200}  >
+                <VisibilitySensor delay={750} bottomOffset={350}  >
                     <SkillsText> Développeur passionné et curieux, je conçois et réalise des sites web du cahier des charges à la mise en ligne.
 Après des études en informatique complété par un cursus en école de commerce
 je travaille en tant que développeur freelance depuis novembre 2020. <br></br><br></br>Mon objectif est de répondre à l'ensemble de vos besoins web afin d'augmenter votre visibilité et/ou votre chiffre d'affaire. J'attache une importance particulière au design et à l'expérience utilisateur des projets que je réalise.
@@ -212,6 +212,7 @@ border-radius:50%;
 height:25vh;
 width:25vh;
 filter: grayscale(1);
+box-shadow: 0px 0px 10px rgba(10,10,10,1);
  `
 
 
@@ -298,9 +299,15 @@ const SkillsWrapper = styled.div`
 align-self: center;
 grid-column: 3/4;
 max-width:100%;
+justify-self: center;
 
 @media screen and (max-width:850px) {
     width:70%;
+    margin-top:10%;
+}
+
+@media screen and (min-width:1250px) {
+    width:60%;
     margin-top:10%;
 }
 
@@ -308,6 +315,8 @@ svg {
     max-width:100%;
     height: 100%;
     margin:auto;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,1));
+    
 }
 
 #Vector_36, #Vector_37, #Vector_34, #Vector_35 {
@@ -368,6 +377,7 @@ svg {
 align-self: center;
 justify-self:center;
 max-width: 100px;
+filter: drop-shadow(3px 3px 4px rgba(2,2,2,1));
 
 @media screen and (max-width: 500px) {
     max-width: 80px;

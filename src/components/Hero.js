@@ -180,6 +180,7 @@ animation-duration:1000ms;
 animation-delay:3.5s;
 animation-iteration-count:1;
 animation-name: ${reveal};
+filter: drop-shadow(5px 5px 4px rgba(0,0,0,1));
  }
 
 

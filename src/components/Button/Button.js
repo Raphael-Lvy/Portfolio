@@ -17,12 +17,14 @@ position:relative;
 display:block;
 justify-content:center;
 align-items:center;
+
 padding : ${({ small }) => small ? '0.5rem 1.25rem' : '0.75rem 1.5rem'};
-font-size : ${({ small }) => small ? '1.2rem' : '1.5rem'};
+font-size : ${({ small }) => small ? '1.1rem' : '1.5rem'};
 font-weight:600;
 font-family:'Roboto';
 border-radius:10px;
-border: ${({ primary }) => primary ? '1px var(--primary-color) solid' :'1px black solid' };
+box-shadow: ${({ primary }) => primary ? '0px 0px 8px rgba(255,255,255,1)' :'0px 0px 5px rgba(0,0,0,1)' };
+border: ${({ primary }) => primary ? '1px transparent solid' :'1px transparent solid' };
 color: ${({ primary }) => primary ? 'var(--primary-color)' : 'black'};
 outline: 0;
   overflow:hidden;
@@ -56,7 +58,7 @@ outline: 0;
 
   @media screen and (max-width:740px) {
     padding: 0.5rem 1.5rem;
-    font-size:1.2rem;
+    font-size:1rem;
   }
 `
 

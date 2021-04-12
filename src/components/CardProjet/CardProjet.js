@@ -8,7 +8,7 @@ const CardProjet = ({ name, description, image }) => {
 
 
     return (
-        <VisibilitySensor bottomOffset={400} delay={750}>
+        <VisibilitySensor bottomOffset={500} delay={750}>
         <Card>
             <Description>
                 <Title>{name}</Title>
@@ -47,6 +47,7 @@ position: relative;
 transition: 0.5s linear;
 color: black;
 height:100%;
+box-shadow: 0px 0px 10px rgba(0,0,0,1);
 
 background-image: linear-gradient(to bottom, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 
@@ -136,7 +137,7 @@ const Image = styled.img`
    max-width:100%;
    border-radius:10px;
    object-fit: fit;
-   
+   box-shadow: 0px 0px 10px rgba(0,0,0,1);
    filter: brightness(1);
    transition: 0.5s ease-in-out;
    position:relative;
