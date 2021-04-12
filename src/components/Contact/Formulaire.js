@@ -32,7 +32,7 @@ const surbrillance = () => {
 
     return (
         <form className="screen"  method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/success" >
-        <div className="screen-header">ces
+        <div className="screen-header">
           <div className="screen-header-left" >
             <div className="screen-header-button close" onClick={surbrillance}></div>
             <div className="screen-header-button maximize" onClick={surbrillance}></div>
