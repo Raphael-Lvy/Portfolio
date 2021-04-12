@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import CardProjet from '../CardProjet/CardProjet';
+import BG from '../Assets/smoke2.png'
 
 const Projets = ({ data }) => {
 
@@ -40,7 +40,12 @@ const Projets = ({ data }) => {
 
 const ProjetsContainer = styled.section`
 width: 100vw;
-background: linear-gradient( to top ,rgb(50, 50, 50) 0%,rgb(30, 30, 30)  100%) ;
+background: url(${BG}) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+/* background-image: linear-gradient(to right top, #9f9f9f, #949494, #898989, #7e7e7e, #737373, #656565, #585858, #4b4b4b, #393939, #282828, #171717, #000000); */
 display:flex;
 flex-direction:column;
 align-items: center;
@@ -66,6 +71,10 @@ padding: 2rem;
 
 @media screen and (max-width: 1400px) {
     grid-template-columns: 1fr  ;
+}
+
+@media screen and (min-width:550px) {
+    padding: 2rem 5rem;
 }
 
 `

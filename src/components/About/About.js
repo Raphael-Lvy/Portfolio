@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Lines from '../Lines/Lines';
 import Raphael from '../Assets/RaphaelCarré.png';
+import BG from '../Assets/smoke2.png'
 import VisibilitySensor from '../VisibilitySensor';
 
 const Word = () => {
     const [title, setTitle] = useState('');
 
-    const list = ['Web', 'Frontend', 'Freelance'];
+    const list = ['Web', 'Fullstack', 'Freelance'];
     let i = 0;
     useEffect(() => {
         const interval = setInterval(() => {
@@ -40,7 +40,10 @@ const About = () => {
 
             <Presentation>
                 <VisibilitySensor delay={750} bottomOffset={200}  >
-                    <SkillsText> Je suis graphiste, webdesigner et développeur, freelance depuis 2004. Je conçois et réalise des sites web du cahier des charges à la mise en ligne, en passant par la conception graphique, la prise de vue photographique et le développement. J’interviens seul ou en équipe. Mes partenaires sont des photographes, rédacteurs, stylistes, et imprimeurs. Mes clients sont des sociétés, des consultants des artisans et des artistes. Je travaille également en partenariat avec des agences web et événementielles.</SkillsText>
+                    <SkillsText> Développeur passionné et curieux, je conçois et réalise des sites web du cahier des charges à la mise en ligne.
+Après des études en informatique complété par un cursus en école de commerce
+je travaille en tant que développeur freelance depuis novembre 2020. <br></br><br></br>Mon objectif est de répondre à l'ensemble de vos besoins web afin d'augmenter votre visibilité et/ou votre chiffre d'affaire. J'attache une importance particulière au design et à l'expérience utilisateur des projets que je réalise.
+</SkillsText>
                 </VisibilitySensor>
                 <SkillsWrapper>
                     <svg viewBox="0 0 799 690" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,6 +89,9 @@ const About = () => {
                 </SkillsWrapper>
             </Presentation>
 
+            <Compétences>
+                <h2>Compétences</h2>
+            </Compétences>
             <Badges>
                 <VisibilitySensor delay={500} bottomOffset={200}   >
                     <svg viewBox="0 0 128 128">
@@ -133,15 +139,7 @@ const About = () => {
                     </svg>
                 </VisibilitySensor>
             </Badges>
-            <div className="lines">
-                <Lines deg={0} position={10} delay={1.5} />
-                <Lines deg={0} position={25} delay={1.75} />
-                <Lines deg={0} position={40} delay={2} />
-                <Lines deg={0} position={60} delay={2.25} />
-                <Lines deg={0} position={75} delay={2.5} />
-                <Lines deg={0} position={90} delay={2.75} />
-
-            </div>
+            
         </Wrapper>
     );
 };
@@ -151,7 +149,14 @@ const About = () => {
 const Wrapper = styled.section`
 
 width: 100%;
-background: linear-gradient( to top ,rgb(20, 20, 20) 0%,rgb(30, 30, 30)  100%) ;
+/* background: linear-gradient( to top ,rgb(20, 20, 20) 0%,rgb(30, 30, 30)  100%) ; */
+/* clip-path: polygon(25% 0%, 100% 0%, 0 36%, 0 0); */
+
+background: url(${BG}) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 display: flex;
 flex-direction: column;
 justify-content:space-around;
@@ -250,10 +255,11 @@ letter-spacing:0.15rem;
 `
 
 const Presentation = styled.div`
-padding: 5vh 0;
-width:80%;
+padding: 5vh 30px;
+width:90%;
 display:grid;
 grid-template-columns: 1fr 5% 1fr;
+background: rgba(1,1,1,0.6);
 
 p{
     line-height: 25px;
@@ -340,6 +346,18 @@ align-self: center;
 height:100%;
 display:flex;
 align-items:center;
+font-size:1.1rem;
+
+`
+
+const Compétences = styled.div`
+font-size: 1.25rem;
+display:flex;
+justify-content:center;
+text-shadow: 2px 2px 1px gray;
+margin-top: 5vh;
+padding-bottom: 10px;
+border-bottom: 1px solid gray;
 `
 
 const Badges = styled.div`
@@ -350,7 +368,7 @@ grid-template-columns: repeat(3,100px);
 max-width:75%;
 column-gap: 200px;
 row-gap:40px;
-margin: 10vh 20px;
+margin: 5vh 20px 10vh 20px;
 justify-content: center;
 
 svg {

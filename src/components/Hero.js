@@ -4,6 +4,7 @@ import {FaReact} from 'react-icons/fa';
 import Button from './Button/Button';
 import Lines from './Lines/Lines';
 import { Link as AnimatedLink } from "react-scroll";
+import BG from './Assets/smoke2.png'
 
 const Hero = () => {
 
@@ -27,17 +28,17 @@ const Hero = () => {
         
         </HeroContent>
         <div className='lines'>
-            <Lines deg={2} position = {4} delay={0.5} bg={true}/>
-            <Lines deg={102} position = {4} delay={0.9} bg={true}/>
-            <Lines deg={52} position = {30} delay={1.9} bg={true}/>
-            <Lines deg={-2} position = {40} delay={1.5} bg={true}/>
-            <Lines deg={-10} position = {60} delay={2.2} bg={true}/>
-            <Lines deg={-20} position = {50} delay={1.5} bg={true}/>
-            <Lines deg={-250} position = {40} delay={1.1} bg={true}/>
-            <Lines deg={-120} position = {90} delay={1.9} bg={true}/>
-            <Lines deg={-1} position = {80} delay={2.9} bg={true}/>
-            <Lines deg={-30} position = {80} delay={0.9} bg={true}/>
-            <Lines deg={10} position = {70} delay={2.5} bg={true}/>
+            <Lines deg={2} position = {4} delay={0.5} bg={false}/>
+            <Lines deg={102} position = {4} delay={0.9} bg={false}/>
+            <Lines deg={52} position = {30} delay={1.9} bg={false}/>
+            <Lines deg={-2} position = {40} delay={1.5} bg={false}/>
+            <Lines deg={-10} position = {60} delay={2.2} bg={false}/>
+            <Lines deg={-20} position = {50} delay={1.5} bg={false}/>
+            <Lines deg={-250} position = {40} delay={1.1} bg={false}/>
+            <Lines deg={-120} position = {90} delay={1.9} bg={false}/>
+            <Lines deg={-1} position = {80} delay={2.9} bg={false}/>
+            <Lines deg={-30} position = {80} delay={0.9} bg={false}/>
+            <Lines deg={10} position = {70} delay={2.5} bg={false}/>
           </div>
           <SVGWrapper>
             <svg  viewBox="0 0 949 837" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +103,12 @@ const Hero = () => {
 };
 
 const HeroContainer = styled.section`
-background : rgb(21,21,21);
+/* background : rgb(21,21,21); */
+background: url(${BG}) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 height: 100vh;
 width:100vw;
 display:grid;

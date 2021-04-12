@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import VisibilitySensor from '../VisibilitySensor';
 import Formulaire from './Formulaire';
+import BG from '../Assets/smoke2.png'
 
 const Contact = () => {
     return (
@@ -194,7 +195,12 @@ export default Contact;
 
 const Wrapper = styled.section`
 width: 100%;
-background: linear-gradient( to top ,rgb(20, 20, 20) 0%,rgb(30, 30, 30)  100%) ;
+/* background: linear-gradient( to top ,rgb(20, 20, 20) 0%,rgb(30, 30, 30)  100%) ; */
+background: url(${BG}) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 display: flex;
 flex-direction: column;
 
