@@ -31,7 +31,7 @@ const surbrillance = () => {
 
 
     return (
-        <form className="screen"  name="contact" method="POST" data-netlify="true" action='./'>
+        <form className="screen"  method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" >
         <div className="screen-header">
           <div className="screen-header-left" >
             <div className="screen-header-button close" onClick={surbrillance}></div>
@@ -232,9 +232,8 @@ const surbrillance = () => {
                 <input className="app-form-control appMessage" placeholder="Message" type='text' name='message' />
               </div>
               <div className="app-form-group buttons">
-              <p className="hidden">
-    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-  </p>
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
                 <Button small={true} primary={true} type='submit'>Envoyer</Button>
               </div>
             </div>
