@@ -40,7 +40,7 @@ outline: 0;
   &:before {
     content: "";
   position: absolute;
-  background: ${({primary}) => primary? 'var(--secondary-bg-button)' : 'rgba(255,255,255,0.4)'} ;
+  background: ${({primary}) => primary? 'var(--secondary-bg-button)' : 'white'} ;
   bottom: 0;
   left: 0;
   right: 100%;

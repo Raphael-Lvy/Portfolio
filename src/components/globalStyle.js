@@ -31,15 +31,30 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-attachment: scroll;
   -webkit-overflow-scrolling: touch;
-  background: url(${BG}) no-repeat center center fixed; 
+  ${'' /* background: url(${BG}) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */}
   }
   
+
+  body:after{
+      content:"";
+      position:fixed; // stretch a fixed position to the whole screen
+      top:0;
+      height:100vh; // fix for mobile browser address bar appearing disappearing
+      left:0;
+      right:0;
+      z-index:-1; // needed to keep in the background
+      background: url(${BG}) no-repeat center center ; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
   `
   
   
