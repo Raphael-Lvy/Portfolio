@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import Button from '../Button/Button';
 import './Contact.css';
-import emailjs from 'emailjs-com';
+
 
 const Formulaire = () => {
 
@@ -25,20 +25,13 @@ const surbrillance = () => {
   }, 300);
 }
 
-const [form, setForm] = useState({
-  nom:'', email:'', téléphone:'', message:''
-})
-
-const handleSubmit = (e) => {
-  e.preventDefault();
 
 
 
-}
 
 
     return (
-        <form className="screen" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
+        <form className="screen"  name="contact" method="POST" data-netlify="true" action='./'>
         <div className="screen-header">
           <div className="screen-header-left" >
             <div className="screen-header-button close" onClick={surbrillance}></div>
@@ -227,16 +220,16 @@ const handleSubmit = (e) => {
           <div className="screen-body-item">
             <div className="app-form">
               <div className="app-form-group">
-                <input className="app-form-control appNom" placeholder="Nom" type='text' id='nom' required  value={form.nom} onChange={(e) => setForm({...form, nom: e.target.value})} />
+                <input className="app-form-control appNom" placeholder="Nom" type='text' name='nom' required  />
               </div>
               <div className="app-form-group nom">
-                <input className="app-form-control appEmail" placeholder="Email" type='email' id='email' required value={form.email} onChange={(e) => setForm({...form, email: e.target.value})}/>
+                <input className="app-form-control appEmail" placeholder="Email" type='email' name='email' required />
               </div>
               <div className="app-form-group tel">
-                <input className="app-form-control appTel" placeholder="Téléphone (falcultatif)" type='text' id='téléphone' value={form.téléphone} onChange={(e) => setForm({...form, téléphone: e.target.value})}/>
+                <input className="app-form-control appTel" placeholder="Téléphone (falcultatif)" type='text' name='téléphone' />
               </div>
               <div className="app-form-group message">
-                <input className="app-form-control appMessage" placeholder="Message" type='text' id='message' value={form.message} onChange={(e) => setForm({...form, message: e.target.value})}/>
+                <input className="app-form-control appMessage" placeholder="Message" type='text' name='message' />
               </div>
               <div className="app-form-group buttons">
               <p className="hidden">
