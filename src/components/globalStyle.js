@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import BG from '../components/Assets/smoke2.png';
+import BG from '../components/Assets/smoke3.jpg';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
