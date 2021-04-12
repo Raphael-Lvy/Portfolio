@@ -40,12 +40,6 @@ const Projets = ({ data }) => {
 
 const ProjetsContainer = styled.section`
 width: 100vw;
-/* background: url(${BG}) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-/* background-image: linear-gradient(to right top, #9f9f9f, #949494, #898989, #7e7e7e, #737373, #656565, #585858, #4b4b4b, #393939, #282828, #171717, #000000); */
 display:flex;
 flex-direction:column;
 align-items: center;

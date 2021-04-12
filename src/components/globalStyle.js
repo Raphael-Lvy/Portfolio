@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import BG from '../components/Assets/smoke5.jpg';
+import BG from '../components/Assets/smoke4.jpg';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
@@ -31,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   width: 100%;
   height: 100%;
+  background-attachment: scroll;
   -webkit-overflow-scrolling: touch;
   background: url(${BG}) no-repeat center center fixed; 
   -webkit-background-size: cover;
