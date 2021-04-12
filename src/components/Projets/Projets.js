@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CardProjet from '../CardProjet/CardProjet';
-import BG from '../Assets/smoke2.png'
+
 
 const Projets = ({ data }) => {
 

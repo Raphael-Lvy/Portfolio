@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Raphael from '../Assets/RaphaelCarré.png';
-import BG from '../Assets/smoke2.png'
+
 import VisibilitySensor from '../VisibilitySensor';
 
 const Word = () => {

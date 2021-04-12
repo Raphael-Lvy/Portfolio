@@ -4,7 +4,7 @@ import {FaReact} from 'react-icons/fa';
 import Button from './Button/Button';
 import Lines from './Lines/Lines';
 import { Link as AnimatedLink } from "react-scroll";
-import BG from './Assets/smoke2.png'
+
 
 const Hero = () => {
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import VisibilitySensor from '../VisibilitySensor';
 import Formulaire from './Formulaire';
-import BG from '../Assets/smoke2.png'
+
 
 const Contact = () => {
     return (
