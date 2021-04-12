@@ -2,20 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components'
 import SEO from "../components/seo"
+
 import { GlobalStyle } from "../components/globalStyle"
 import Footer from '../components/footer';
 import Lines from '../components/Lines/Lines'
 
-const NotFoundPage = () => (
+const SuccessPage = () => (
   <>
     <GlobalStyle />
-    <Error>
-      <SEO title="Erreur 404" />
+    <Success>
+      <SEO title="Message envoyé" />
         
-          <h1>Erreur</h1>
-          <h3>Cette page n'existe pas... </h3>
+          <h1>Votre message a été envoyé avec succès !</h1>
+          <h3>Je vous recontacterai au plus vite </h3>
           <Link to="/">Retour au site</Link>
-         
           <div className='lines'>
             <Lines deg={2} position = {4} delay={0.5} bg={true}/>
             <Lines deg={102} position = {4} delay={0.9} bg={true}/>
@@ -29,15 +29,14 @@ const NotFoundPage = () => (
             <Lines deg={-30} position = {80} delay={0.9} bg={true}/>
             <Lines deg={10} position = {70} delay={2.5} bg={true}/>
           </div>
-      </Error>
+      </Success>
       <Footer/>
   </>
 )
 
-export default NotFoundPage
+export default SuccessPage
 
-const Error = styled.div`
-
+const Success = styled.div`
 height:90vh;
 box-sizing:border-box;
 margin:0;
@@ -46,10 +45,13 @@ color:white;
 display:flex;
 flex-direction:column;
 align-items:center;
-position: relative;
+padding: 0 5vh;
+text-align: center;
 
 h1{
   margin-top:10vh;
+  font-size:1.5rem;
+  
 }
 
 h3 {
