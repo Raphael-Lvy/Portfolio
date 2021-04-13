@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Raphael from '../Assets/RaphaelCarré.png';
+import Raphael from '../Assets/RaphaelCarré1.png';
 
 import VisibilitySensor from '../VisibilitySensor';
 
