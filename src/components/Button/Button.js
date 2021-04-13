@@ -17,7 +17,7 @@ position:relative;
 display:block;
 justify-content:center;
 align-items:center;
-
+text-decoration:none;
 padding : ${({ small }) => small ? '0.5rem 1.25rem' : '0.75rem 1.5rem'};
 font-size : ${({ small }) => small ? '1.1rem' : '1.5rem'};
 font-weight:600;
@@ -56,10 +56,6 @@ outline: 0;
     
   }
 
-  a {
-    text-decoration:none;
-    color: ${({ primary }) => primary ? 'var(--primary-color)' : 'black'};
-  }
 
   @media screen and (max-width:740px) {
     padding: 0.5rem 1.5rem;

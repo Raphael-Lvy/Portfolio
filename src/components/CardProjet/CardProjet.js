@@ -9,28 +9,32 @@ const CardProjet = ({ name, description, image, url }) => {
 
     return (
         <VisibilitySensor bottomOffset={500} delay={750}>
-        <Card>
-            <Description>
-                <Title>{name}</Title>
-                
-                <Content>{description}</Content>
-                <div className='btn'>
-                <Button primary={false} small={true} >
-                    <a href={url} target='blank'>Découvrir le site</a>
-                    </Button>
+            <Card>
+                <Description>
+                    <Title>{name}</Title>
+
+                    <Content>{description}</Content>
+                    <div className='btn'>
+                        <a href={url} target='blank'>
+                            <Button primary={false} small={true} >
+                                Découvrir le site
+                            </Button>
+                        </a>
                     </div>
-            </Description>
-            
-            <ImageWrapper >
-                <Image src={image.childImageSharp.fluid.src} alt={description} loading="lazy" />
-                <div className='middle'>
-                <Button primary={true} small={true} >
-                <a href={url} target='blank'>Voir</a>
-                    </Button>
-                </div>
+                </Description>
+
+                <ImageWrapper >
+                    <Image src={image.childImageSharp.fluid.src} alt={description} loading="lazy" />
+                    <div className='middle'>
+                        <a href={url} target='blank'>
+                            <Button primary={true} small={true} >
+                                Voir
+                        </Button>
+                        </a>
+                    </div>
                 </ImageWrapper>
-                
-        </Card>
+
+            </Card>
         </VisibilitySensor>
     );
 };
@@ -54,6 +58,10 @@ background-image: linear-gradient(to bottom, lightgrey 0%, lightgrey 1%, #e0e0e0
 
 .btn {
     transition : 0.7s ease;
+}
+
+a {
+    text-decoration:none;
 }
 
 @media screen and (min-width:1400px){
