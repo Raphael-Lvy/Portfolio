@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from '../Button/Button';
 import VisibilitySensor from '../VisibilitySensor';
 
-const CardProjet = ({ name, description, image }) => {
+const CardProjet = ({ name, description, image, url }) => {
 
 
 
@@ -16,7 +16,7 @@ const CardProjet = ({ name, description, image }) => {
                 <Content>{description}</Content>
                 <div className='btn'>
                 <Button primary={false} small={true} >
-                    Découvrir le site
+                    <a href={url} target='blank'>Découvrir le site</a>
                     </Button>
                     </div>
             </Description>
@@ -25,7 +25,7 @@ const CardProjet = ({ name, description, image }) => {
                 <Image src={image.childImageSharp.fluid.src} alt={description} loading="lazy" />
                 <div className='middle'>
                 <Button primary={true} small={true} >
-                    Voir
+                <a href={url} target='blank'>Voir</a>
                     </Button>
                 </div>
                 </ImageWrapper>

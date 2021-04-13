@@ -56,6 +56,11 @@ outline: 0;
     
   }
 
+  a {
+    text-decoration:none;
+    color: ${({ primary }) => primary ? 'var(--primary-color)' : 'black'};
+  }
+
   @media screen and (max-width:740px) {
     padding: 0.5rem 1.5rem;
     font-size:1rem;

@@ -17,9 +17,10 @@ const Projets = ({ data }) => {
                 const id = projet.node.id;
                 const description = projet.node.description;
                 const image = projet.node.photo;
+                const url = projet.node.url;
                 
                 return(
-                    <CardProjet name={name} description={description} image={image} key={id}/>
+                    <CardProjet name={name} description={description} image={image} url={url} key={id}/>
                 )
                     
                 
