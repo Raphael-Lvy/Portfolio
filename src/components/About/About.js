@@ -253,10 +253,12 @@ padding: 5vh 30px;
 width:90%;
 display:grid;
 grid-template-columns: 1fr 5% 1fr;
-background: rgba(1,1,1,0.6);
+
 
 p{
     line-height: 25px;
+    text-shadow: 1px 1px 2px black;
+    
 }
 
 .about-presentation {
@@ -298,7 +300,7 @@ to {
 const SkillsWrapper = styled.div`
 align-self: center;
 grid-column: 3/4;
-max-width:100%;
+width:100%;
 justify-self: center;
 
 @media screen and (max-width:850px) {

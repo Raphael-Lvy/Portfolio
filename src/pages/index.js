@@ -36,6 +36,7 @@ export const query = graphql`
           description
           name
           url
+          technologies
           photo {
             childImageSharp {
               fluid ( quality: 100){
