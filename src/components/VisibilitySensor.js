@@ -19,7 +19,7 @@ const Visible = ({children, bottomOffset, delay}) => {
             style={{
               borderRadius: '10px',
               opacity: isVisible ? 1 : 0.01,
-              transform: isVisible? 'translate(0,0)' : 'translate(0,200px)',
+              transform: isVisible? 'translate(0,0)' : 'translate(0,150px)',
               scrollCheck:true,
               scrollThrottle:1,
               scrollDelay: 250,

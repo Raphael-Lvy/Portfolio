@@ -318,6 +318,8 @@ svg {
     height: 100%;
     margin:auto;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,1));
+
+    
     
 }
 
@@ -380,13 +382,18 @@ align-self: center;
 justify-self:center;
 max-width: 100px;
 filter: drop-shadow(3px 3px 4px rgba(2,2,2,1));
-
+transition: 0.1s;
 @media screen and (max-width: 500px) {
     max-width: 80px;
 }
 @media screen and (max-width: 360px) {
     max-width: 60px;
 }
+&:hover {
+        transform: scale(1.1);
+
+    }
+
 }
 
 .about-icons {

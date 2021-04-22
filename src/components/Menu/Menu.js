@@ -52,12 +52,15 @@ display: flex;
   top: 0;
   right:0;
   
+  
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
  
   @media (max-width: 550px) {
     padding: 1rem;
   }
+
+  
 
   a {
     font-size: 1.5rem;
@@ -68,7 +71,7 @@ display: flex;
     color: white;
     text-decoration: none;
     transition: color 0.1s linear;
-    
+    cursor:pointer;
     
     @media (max-width: 1000px) {
       font-size: 1.5rem;

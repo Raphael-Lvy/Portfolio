@@ -3,20 +3,20 @@
         "url":"https://immo-conseil.web.app/",
         "photo":"./Images/mockuper_Immo1.png",
         "description": "Immo-Conseil est un site web réalisé pour un professionel de l'immobilier en région parisienne.",
-        "technologies" :["react", "bootstrap"]
+        "technologies" :["react","javascript", "bootstrap"]
     },
     {
         "name" :"Dashboard",
         "url":"https://dashboardup.herokuapp.com/",
         "photo":"./Images/mockuper_Dashboard4.png",
-        "description": "Web-App présentant l'actualité, la météo et les lieux d'intérêt selon la capitale selectionnée, implémentation de 3 API",
-        "technologies" :["react"]
+        "description": "Web-App présentant l'actualité, la météo et les lieux d'intérêt selon la ville selectionnée. Implémentation de 3 API",
+        "technologies" :["react","javascript"]
     },
     {
         "name" :"Sportee",
         "url":"https://sporteee.herokuapp.com/home",
         "photo":"./Images/mockuper_Sportee.png",
-        "description": "FullStack MERN App. Postez des stories, ajoutez des photos puis likez et commentez celles de vos amis",
+        "description": "Une web-app MERN fullstack. Postez des stories, ajoutez des photos puis likez et commentez celles de vos amis",
         "technologies" :["mongo", "express","react","node"]
     }
     

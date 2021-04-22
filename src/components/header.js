@@ -50,12 +50,16 @@ color: white;
 
 const Brand = styled.div`
 padding: 0 5%;
-
+cursor:pointer;
 display:flex;
 align-items:center;
-
+transition: 0.2s;
 img {
   height:40px;
+}
+
+&:hover {
+  transform:scale(1.1);
 }
 
 `

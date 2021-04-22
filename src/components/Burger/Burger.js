@@ -30,6 +30,10 @@ const StyledBurger = styled.button `
   margin: 0 5%;
   z-index: 10;
   
+  &:hover {
+    transform: scale(1.1);
+  }
+
   &:focus {
     outline: none;
   }
