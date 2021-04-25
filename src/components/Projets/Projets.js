@@ -66,8 +66,10 @@ grid-gap: 2rem;
 padding: 2rem;
 
 @media screen and (max-width: 1400px) {
-    grid-template-columns: 1fr  ;
+    grid-template-columns: 1fr ;
+    
 }
+
 
 @media screen and (min-width:550px) {
     padding: 2rem 5rem;

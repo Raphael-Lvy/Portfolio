@@ -41,7 +41,7 @@ const About = () => {
             <Presentation>
                 <VisibilitySensor delay={750} bottomOffset={350}  >
                     <SkillsText> Développeur passionné et curieux, je conçois et réalise des sites web du cahier des charges à la mise en ligne.
-Après des études en informatique complété par un cursus en école de commerce
+Après une licence en informatique complétée par un cursus en école de commerce
 je travaille en tant que développeur freelance depuis novembre 2020. <br></br><br></br>Mon objectif est de répondre à l'ensemble de vos besoins web afin d'augmenter votre visibilité et/ou votre chiffre d'affaire. J'attache une importance particulière au design et à l'expérience utilisateur des projets que je réalise.
 </SkillsText>
                 </VisibilitySensor>

@@ -79,7 +79,6 @@ transition: 0.5s linear;
 color: black;
 height:100%;
 box-shadow: 0px 0px 10px rgba(0,0,0,1);
-
 background-image: linear-gradient(to bottom, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 
 
@@ -93,13 +92,26 @@ a {
 
 @media screen and (min-width:1400px){
     height: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width:1400px) {
+    margin: 0 100px;
+}
+
+@media screen and (max-width:950px) {
+    margin: 0 75px;
+}
+
+@media screen and (max-width:850px) {
+    margin: 0 40px;
 }
 
 @media screen and (max-width:740px) {
     flex-direction:column;
     justify-content:space-between;
     min-height:100%;
-   
+    margin: 0;
 }
 
 .middle {
