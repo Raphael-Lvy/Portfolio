@@ -235,6 +235,10 @@ svg {
 @media screen and (max-width:740px) {
     width: 60px;
 }
+
+@media screen and (max-width:440px) {
+    width: 50px;
+}
 }
 &:hover {
     transform: scale(1.05);
