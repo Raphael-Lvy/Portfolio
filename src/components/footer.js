@@ -5,12 +5,12 @@ const Footer = () => {
      return (
           <StyledFooter>
                <Top>
-                    <Author>Raphaël Levy © {new Date().getFullYear()} <span role='img' aria-label='fusée'>🚀</span></Author>
-                    <div>Fait avec <span role='img' aria-label='amour'>💕</span></div>
+                    <Author><span role='img' aria-label='fusée' className='icon'>🚀</span> Raphaël Levy © {new Date().getFullYear()} </Author>
+
                </Top>
                <Bottom>
 
-                    <Email><span role='img' aria-label='email' className='email'>📩</span> : raphael.webdevelopment@gmail.com</Email>
+                    <Email><span role='img' aria-label='email' className='icon'>📩</span> : raphael.webdevelopment@gmail.com</Email>
                </Bottom>
           </StyledFooter>
      );
@@ -45,7 +45,7 @@ letter-spacing:2px;
 
 
 
-.email {
+.icon {
      font-size: 1.4rem;
      @media screen and (max-width:400px) {
      font-size:1rem;}}
