@@ -1,6 +1,6 @@
 [
     {   "name" :"Immo Conseil",
-        "url":"https://immo-conseil.web.app/",
+        "url":"https://immo-conseil.netlify.app/",
         "photo":"./Images/mockuper_Immo1.png",
         "description": "Immo-Conseil est un site web réalisé pour un professionel de l'immobilier en région parisienne (en développement).",
         "technologies" :["react","javascript", "bootstrap"]
