@@ -14,7 +14,7 @@
     },
     {
         "name" :"Sportee",
-        "url":"https://sporteee.herokuapp.com/home",
+        "url":"https://sporteee.herokuapp.com/",
         "photo":"./Images/mockuper_Sportee.png",
         "description": "Sportee est une web-app MERN fullstack. Postez des stories, ajoutez des photos puis likez et commentez celles de vos amis",
         "technologies" :["mongo", "express","react","node"]
